@@ -4,6 +4,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('/Users/virgilefantauzzi/Documents/FreelanceFinder/freelancefinder')
+            storePassword 'freelance'
+            keyAlias 'freelance'
+            keyPassword 'freelance'
+        }
+    }
     compileSdkVersion 31
     buildToolsVersion "30.0.3"
 
